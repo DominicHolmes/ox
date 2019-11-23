@@ -13,6 +13,7 @@
 		F223E5F82389D537009430D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F223E5F62389D537009430D9 /* Main.storyboard */; };
 		F223E5FA2389D53A009430D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F223E5F92389D53A009430D9 /* Assets.xcassets */; };
 		F223E5FD2389D53A009430D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F223E5FB2389D53A009430D9 /* LaunchScreen.storyboard */; };
+		F223E6052389D85F009430D9 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F223E6042389D85F009430D9 /* SpotifyiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		F223E5F92389D53A009430D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F223E5FC2389D53A009430D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F223E5FE2389D53A009430D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F223E6042389D85F009430D9 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		F223E6062389DA25009430D9 /* ox-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ox-bridging-header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F223E6052389D85F009430D9 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +60,11 @@
 		F223E5EF2389D537009430D9 /* ox */ = {
 			isa = PBXGroup;
 			children = (
+				F223E6042389D85F009430D9 /* SpotifyiOS.framework */,
 				F223E5F02389D537009430D9 /* AppDelegate.swift */,
 				F223E5F22389D537009430D9 /* SceneDelegate.swift */,
 				F223E5F42389D537009430D9 /* ViewController.swift */,
+				F223E6062389DA25009430D9 /* ox-bridging-header.h */,
 				F223E5F62389D537009430D9 /* Main.storyboard */,
 				F223E5F92389D53A009430D9 /* Assets.xcassets */,
 				F223E5FB2389D53A009430D9 /* LaunchScreen.storyboard */,
@@ -286,13 +292,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 374VQ98E23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ox",
+				);
 				INFOPLIST_FILE = ox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = land.dominic.ox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ox-bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,13 +316,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 374VQ98E23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ox",
+				);
 				INFOPLIST_FILE = ox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = land.dominic.ox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ox-bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
