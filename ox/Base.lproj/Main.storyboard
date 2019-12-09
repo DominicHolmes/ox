@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="1077" y="761"/>
         </scene>
-        <!--View Controller-->
+        <!--Share Code View Controller-->
         <scene sceneID="m8f-hE-ewP">
             <objects>
-                <viewController id="b79-v2-bUG" sceneMemberID="viewController">
+                <viewController id="b79-v2-bUG" customClass="ShareCodeViewController" customModule="ox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z33-xP-5Jv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jrk-u3-UtK">
                                 <rect key="frame" x="132" y="203" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2190333549" green="0.2190333549" blue="0.2190333549" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2793" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B99-Y0-I28">
                                 <rect key="frame" x="165" y="468" width="75" height="34"/>
@@ -111,6 +111,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fzH-t0-DhJ"/>
                     </view>
+                    <connections>
+                        <outlet property="qrImageView" destination="jrk-u3-UtK" id="MHk-gd-XB8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M48-sb-SMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
