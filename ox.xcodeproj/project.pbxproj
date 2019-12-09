@@ -60,11 +60,11 @@
 		F223E5EF2389D537009430D9 /* ox */ = {
 			isa = PBXGroup;
 			children = (
+				F223E6062389DA25009430D9 /* ox-bridging-header.h */,
 				F223E6042389D85F009430D9 /* SpotifyiOS.framework */,
 				F223E5F02389D537009430D9 /* AppDelegate.swift */,
 				F223E5F22389D537009430D9 /* SceneDelegate.swift */,
 				F223E5F42389D537009430D9 /* ViewController.swift */,
-				F223E6062389DA25009430D9 /* ox-bridging-header.h */,
 				F223E5F62389D537009430D9 /* Main.storyboard */,
 				F223E5F92389D53A009430D9 /* Assets.xcassets */,
 				F223E5FB2389D53A009430D9 /* LaunchScreen.storyboard */,
@@ -304,7 +304,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = land.dominic.ox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ox-bridging-header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ox/ox-bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,7 +328,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = land.dominic.ox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ox-bridging-header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ox/ox-bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
