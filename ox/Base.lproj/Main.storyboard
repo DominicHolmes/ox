@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="279.71014492753625" y="10.714285714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--New Room View Controller-->
         <scene sceneID="tan-Aq-0C7">
             <objects>
-                <viewController id="ZVw-kr-LW4" sceneMemberID="viewController">
+                <viewController id="ZVw-kr-LW4" customClass="NewRoomViewController" customModule="ox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gN1-0D-bde">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,8 +140,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameFieldUpdatedWithSender:" destination="ZVw-kr-LW4" eventType="editingChanged" id="m5R-OQ-IrS"/>
+                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLQ-Lj-ihC">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLQ-Lj-ihC">
                                 <rect key="frame" x="23" y="750" width="368" height="58"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -149,11 +152,18 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButtonPressed" destination="ZVw-kr-LW4" eventType="touchUpInside" id="srA-hG-1FW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kID-hJ-e5n"/>
                     </view>
+                    <connections>
+                        <outlet property="nameField" destination="51C-XL-2Yz" id="yV4-4N-3mv"/>
+                        <outlet property="saveButton" destination="eLQ-Lj-ihC" id="eWw-Hi-DHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ta-ql-sN7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

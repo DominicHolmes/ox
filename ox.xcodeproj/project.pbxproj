@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F21996FF239DEA1C003EA17F /* AllRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21996FE239DEA1C003EA17F /* AllRoomsViewController.swift */; };
 		F2199701239DEA24003EA17F /* NewRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2199700239DEA24003EA17F /* NewRoomViewController.swift */; };
+		F2199703239DEA36003EA17F /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2199702239DEA35003EA17F /* Room.swift */; };
 		F223E5F12389D537009430D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F223E5F02389D537009430D9 /* AppDelegate.swift */; };
 		F223E5F32389D537009430D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F223E5F22389D537009430D9 /* SceneDelegate.swift */; };
 		F223E5F52389D537009430D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F223E5F42389D537009430D9 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		F21996FE239DEA1C003EA17F /* AllRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRoomsViewController.swift; sourceTree = "<group>"; };
 		F2199700239DEA24003EA17F /* NewRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomViewController.swift; sourceTree = "<group>"; };
+		F2199702239DEA35003EA17F /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		F223E5ED2389D537009430D9 /* ox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F223E5F02389D537009430D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F223E5F22389D537009430D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				F223E5F42389D537009430D9 /* ViewController.swift */,
 				F21996FE239DEA1C003EA17F /* AllRoomsViewController.swift */,
 				F2199700239DEA24003EA17F /* NewRoomViewController.swift */,
+				F2199702239DEA35003EA17F /* Room.swift */,
 				F223E5F62389D537009430D9 /* Main.storyboard */,
 				F223E5F92389D53A009430D9 /* Assets.xcassets */,
 				F223E5FB2389D53A009430D9 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 			files = (
 				F2199701239DEA24003EA17F /* NewRoomViewController.swift in Sources */,
 				F223E5F52389D537009430D9 /* ViewController.swift in Sources */,
+				F2199703239DEA36003EA17F /* Room.swift in Sources */,
 				F223E5F12389D537009430D9 /* AppDelegate.swift in Sources */,
 				F223E5F32389D537009430D9 /* SceneDelegate.swift in Sources */,
 				F21996FF239DEA1C003EA17F /* AllRoomsViewController.swift in Sources */,
