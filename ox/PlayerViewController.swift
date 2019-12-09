@@ -41,6 +41,9 @@ class PlayerViewController: UIViewController {
             sd.viewControllerDelegate = self
             self.playerControl = sd
         }
+        
+        albumImageView.layer.cornerRadius = 10.0
+        albumImageView.clipsToBounds = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
