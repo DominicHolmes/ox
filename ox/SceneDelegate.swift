@@ -95,7 +95,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, SPTAppRemoteDelegate {
 extension SceneDelegate: SPTAppRemotePlayerStateDelegate {
     func playerStateDidChange(_ playerState: SPTAppRemotePlayerState) {
         self.viewControllerDelegate?.didUpdatePlayer(with: playerState)
-        self.appRemote.imageAPI?.fetchImage(forItem: playerState.track, with: CGSize(width: 300, height: 300), callback: { (image, error) in
+        self.appRemote.imageAPI?.fetchImage(forItem: playerState.track, with: CGSize(width: 2000, height: 2000), callback: { (image, error) in
             if let image = image as? UIImage {
                 self.viewControllerDelegate?.didFetch(image, forTrackURI: playerState.track.uri)
             }
