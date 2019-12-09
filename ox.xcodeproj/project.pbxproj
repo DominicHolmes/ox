@@ -13,7 +13,7 @@
 		F2199705239DEC95003EA17F /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2199704239DEC95003EA17F /* RoomCell.swift */; };
 		F223E5F12389D537009430D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F223E5F02389D537009430D9 /* AppDelegate.swift */; };
 		F223E5F32389D537009430D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F223E5F22389D537009430D9 /* SceneDelegate.swift */; };
-		F223E5F52389D537009430D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F223E5F42389D537009430D9 /* ViewController.swift */; };
+		F223E5F52389D537009430D9 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F223E5F42389D537009430D9 /* PlayerViewController.swift */; };
 		F223E5F82389D537009430D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F223E5F62389D537009430D9 /* Main.storyboard */; };
 		F223E5FA2389D53A009430D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F223E5F92389D53A009430D9 /* Assets.xcassets */; };
 		F223E5FD2389D53A009430D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F223E5FB2389D53A009430D9 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 		F223E5ED2389D537009430D9 /* ox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F223E5F02389D537009430D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F223E5F22389D537009430D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F223E5F42389D537009430D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F223E5F42389D537009430D9 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		F223E5F72389D537009430D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F223E5F92389D53A009430D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F223E5FC2389D53A009430D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				F223E6042389D85F009430D9 /* SpotifyiOS.framework */,
 				F223E5F02389D537009430D9 /* AppDelegate.swift */,
 				F223E5F22389D537009430D9 /* SceneDelegate.swift */,
-				F223E5F42389D537009430D9 /* ViewController.swift */,
+				F223E5F42389D537009430D9 /* PlayerViewController.swift */,
 				F21996FE239DEA1C003EA17F /* AllRoomsViewController.swift */,
 				F2199700239DEA24003EA17F /* NewRoomViewController.swift */,
 				F2199704239DEC95003EA17F /* RoomCell.swift */,
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2199701239DEA24003EA17F /* NewRoomViewController.swift in Sources */,
-				F223E5F52389D537009430D9 /* ViewController.swift in Sources */,
+				F223E5F52389D537009430D9 /* PlayerViewController.swift in Sources */,
 				F2199703239DEA36003EA17F /* Room.swift in Sources */,
 				F2199705239DEC95003EA17F /* RoomCell.swift in Sources */,
 				F223E5F12389D537009430D9 /* AppDelegate.swift in Sources */,

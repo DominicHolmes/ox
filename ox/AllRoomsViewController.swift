@@ -10,7 +10,11 @@ import UIKit
 
 class AllRoomsViewController: UITableViewController {
     
-    var rooms: [Room] = [Room(name: "hello", iconName: "hello", color: .systemRed)]
+    var rooms: [Room] = [Room(name: "test room", iconName: "hello", color: .systemRed)]
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "PlayerSegue", sender: rooms[indexPath.row])
+    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 74.0
@@ -36,6 +40,8 @@ class AllRoomsViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "NewRoomSegue", let vc = segue.destination as? NewRoomViewController {
             vc.delegate = self
+        } else if segue.identifier == "PlayerSegue", let vc = segue.destination as? PlayerViewController {
+            
         }
     }
     
